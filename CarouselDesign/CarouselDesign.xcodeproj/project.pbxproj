@@ -15,6 +15,15 @@
 		D542F57425333D3800E191A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D542F57225333D3800E191A3 /* LaunchScreen.storyboard */; };
 		D542F57F25333D3900E191A3 /* CarouselDesignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D542F57E25333D3900E191A3 /* CarouselDesignTests.swift */; };
 		D542F58A25333D3900E191A3 /* CarouselDesignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D542F58925333D3900E191A3 /* CarouselDesignUITests.swift */; };
+		D542F59E25333E4500E191A3 /* CarouselCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D542F59D25333E4500E191A3 /* CarouselCollectionViewFlowLayout.swift */; };
+		D542F5BE25333FDD00E191A3 /* FirstCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D542F5BC25333FDD00E191A3 /* FirstCollectionViewCell.swift */; };
+		D542F5BF25333FDD00E191A3 /* FirstCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D542F5BD25333FDD00E191A3 /* FirstCollectionViewCell.xib */; };
+		D542F5C525333FEA00E191A3 /* SecondCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D542F5C325333FEA00E191A3 /* SecondCollectionViewCell.swift */; };
+		D542F5C625333FEA00E191A3 /* SecondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D542F5C425333FEA00E191A3 /* SecondCollectionViewCell.xib */; };
+		D542F5CC25333FFB00E191A3 /* ThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D542F5CA25333FFB00E191A3 /* ThirdCollectionViewCell.swift */; };
+		D542F5CD25333FFB00E191A3 /* ThirdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D542F5CB25333FFB00E191A3 /* ThirdCollectionViewCell.xib */; };
+		D542F5D32533400600E191A3 /* FourthCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D542F5D12533400600E191A3 /* FourthCollectionViewCell.swift */; };
+		D542F5D42533400600E191A3 /* FourthCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D542F5D22533400600E191A3 /* FourthCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		D542F58525333D3900E191A3 /* CarouselDesignUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarouselDesignUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D542F58925333D3900E191A3 /* CarouselDesignUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselDesignUITests.swift; sourceTree = "<group>"; };
 		D542F58B25333D3900E191A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D542F59D25333E4500E191A3 /* CarouselCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		D542F5BC25333FDD00E191A3 /* FirstCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCollectionViewCell.swift; sourceTree = "<group>"; };
+		D542F5BD25333FDD00E191A3 /* FirstCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstCollectionViewCell.xib; sourceTree = "<group>"; };
+		D542F5C325333FEA00E191A3 /* SecondCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCollectionViewCell.swift; sourceTree = "<group>"; };
+		D542F5C425333FEA00E191A3 /* SecondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCollectionViewCell.xib; sourceTree = "<group>"; };
+		D542F5CA25333FFB00E191A3 /* ThirdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCollectionViewCell.swift; sourceTree = "<group>"; };
+		D542F5CB25333FFB00E191A3 /* ThirdCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdCollectionViewCell.xib; sourceTree = "<group>"; };
+		D542F5D12533400600E191A3 /* FourthCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthCollectionViewCell.swift; sourceTree = "<group>"; };
+		D542F5D22533400600E191A3 /* FourthCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +117,8 @@
 		D542F56625333D3500E191A3 /* CarouselDesign */ = {
 			isa = PBXGroup;
 			children = (
+				D542F5B825333FAB00E191A3 /* Views */,
+				D542F5A225333E6300E191A3 /* Libs */,
 				D542F56725333D3500E191A3 /* AppDelegate.swift */,
 				D542F56925333D3500E191A3 /* SceneDelegate.swift */,
 				D542F56B25333D3500E191A3 /* ViewController.swift */,
@@ -126,6 +146,29 @@
 				D542F58B25333D3900E191A3 /* Info.plist */,
 			);
 			path = CarouselDesignUITests;
+			sourceTree = "<group>";
+		};
+		D542F5A225333E6300E191A3 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				D542F59D25333E4500E191A3 /* CarouselCollectionViewFlowLayout.swift */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		D542F5B825333FAB00E191A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D542F5BC25333FDD00E191A3 /* FirstCollectionViewCell.swift */,
+				D542F5BD25333FDD00E191A3 /* FirstCollectionViewCell.xib */,
+				D542F5C325333FEA00E191A3 /* SecondCollectionViewCell.swift */,
+				D542F5C425333FEA00E191A3 /* SecondCollectionViewCell.xib */,
+				D542F5CA25333FFB00E191A3 /* ThirdCollectionViewCell.swift */,
+				D542F5CB25333FFB00E191A3 /* ThirdCollectionViewCell.xib */,
+				D542F5D12533400600E191A3 /* FourthCollectionViewCell.swift */,
+				D542F5D22533400600E191A3 /* FourthCollectionViewCell.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +274,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D542F5CD25333FFB00E191A3 /* ThirdCollectionViewCell.xib in Resources */,
 				D542F57425333D3800E191A3 /* LaunchScreen.storyboard in Resources */,
 				D542F57125333D3800E191A3 /* Assets.xcassets in Resources */,
 				D542F56F25333D3500E191A3 /* Main.storyboard in Resources */,
+				D542F5BF25333FDD00E191A3 /* FirstCollectionViewCell.xib in Resources */,
+				D542F5C625333FEA00E191A3 /* SecondCollectionViewCell.xib in Resources */,
+				D542F5D42533400600E191A3 /* FourthCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D542F5D32533400600E191A3 /* FourthCollectionViewCell.swift in Sources */,
+				D542F5CC25333FFB00E191A3 /* ThirdCollectionViewCell.swift in Sources */,
+				D542F5BE25333FDD00E191A3 /* FirstCollectionViewCell.swift in Sources */,
+				D542F59E25333E4500E191A3 /* CarouselCollectionViewFlowLayout.swift in Sources */,
+				D542F5C525333FEA00E191A3 /* SecondCollectionViewCell.swift in Sources */,
 				D542F56C25333D3500E191A3 /* ViewController.swift in Sources */,
 				D542F56825333D3500E191A3 /* AppDelegate.swift in Sources */,
 				D542F56A25333D3500E191A3 /* SceneDelegate.swift in Sources */,
@@ -366,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +473,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -443,7 +495,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.dev.you7891.carouseldesign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -462,7 +514,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.dev.you7891.carouseldesign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

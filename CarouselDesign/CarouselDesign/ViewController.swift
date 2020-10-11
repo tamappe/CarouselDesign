@@ -7,12 +7,22 @@
 
 import UIKit
 
+enum CarouselCell: Int {
+    case first
+    case second
+    case third
+    case fourth
+}
+
 class ViewController: UIViewController {
     
     @IBOutlet private weak var collectionView: UICollectionView! {
         didSet {
             let nibFiles = [
-                FirstCollectionViewCell.identifier
+                FirstCollectionViewCell.identifier,
+                SecondCollectionViewCell.identifier,
+                ThirdCollectionViewCell.identifier,
+                FourthCollectionViewCell.identifier,
             ]
             nibFiles.forEach { nibFile in
                 collectionView.register(UINib(nibName: nibFile, bundle: nil), forCellWithReuseIdentifier: nibFile)
@@ -58,8 +68,24 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FirstCollectionViewCell.identifier, for: indexPath)
-
-        return cell
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FirstCollectionViewCell.identifier, for: indexPath)
+//        return cell
+        switch indexPath.row {
+        case CarouselCell.first.rawValue:
+            let cell: FirstCollectionViewCell = collectionView.genericDequeueReusableCell(for: indexPath)
+            return cell
+        case CarouselCell.second.rawValue:
+            let cell: SecondCollectionViewCell = collectionView.genericDequeueReusableCell(for: indexPath)
+            return cell
+        case CarouselCell.third.rawValue:
+            let cell: ThirdCollectionViewCell = collectionView.genericDequeueReusableCell(for: indexPath)
+            return cell
+        case CarouselCell.fourth.rawValue:
+            let cell: FourthCollectionViewCell = collectionView.genericDequeueReusableCell(for: indexPath)
+            return cell
+        default:
+            let cell: FirstCollectionViewCell = collectionView.genericDequeueReusableCell(for: indexPath)
+            return cell
+        }
     }
 }
